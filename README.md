@@ -36,7 +36,7 @@ You won't need to separately install the `os`, `json`, or `time` modules as they
 Next, clone this repository:
 
 ```bash
-git clone <repo-url>
+git clone git@github.com:Rufilla/AI-Chatbot-Python.git
 ```
 
 Rename the `dotenv_template` file to `.env`:
