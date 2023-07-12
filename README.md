@@ -1,4 +1,3 @@
-# AI-Chatbot-Python
 # Open AI Chatbot
 
 This is a simple chatbot for Open AI GPT4, written in Python.
