@@ -2,7 +2,6 @@
 # Open AI Chatbot
 
 This is a simple chatbot for Open AI GPT4, written in Python.
-To correctly use it, you will need to create a file called .env from the template file and add in your Open AI key to that file. Then, run it using python3 command with chat.py as an argument.
 
 ![Chatbot screenshot](screenshots/chat1.png)
 
