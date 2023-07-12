@@ -6,43 +6,61 @@ To correctly use it, you will need to create a file called .env from the templat
 
 ![Chatbot screenshot](screenshots/chat1.png)
 
-## Dependencies
+## Dependencies and Setup
 
-The program requires several Python dependencies. Here is a list of them:
+This chatbot is developed in Python3, using several external libraries. Here's how you can get it set up on Ubuntu 22.04 LTS.
 
-- `os`
+Firstly, install Python3 and pip if you haven't already done so:
+
+```bash
+sudo apt update
+sudo apt install python3
+sudo apt install python3-pip
+```
+
+Once the Python3 and pip are installed, you will need to install the following Python packages:
+
 - `openai`
 - `tkinter`
-- `tkinter.font`
-- `filedialog` (from tkinter)
-- `messagebox` (from tkinter)
-- `ChatCompletion` (from openai)
-- `dotenv`
-- `json`
-- `time`
+- `python-dotenv`
 
-## Setup
+You can install these dependencies using pip:
 
-1. Clone this repository.
-2. Install the required Python libraries listed in the "Dependencies" section. You can typically install these with pip by running `pip install <library-name>`.
-3. Rename the `dotenv_template` file to `.env`.
-4. Open the `.env` file with any text editor, and provide your Open AI key. It should look something like this:
-
+```bash
+pip3 install openai
+sudo apt-get install python3-tk
+pip3 install python-dotenv
 ```
+
+You won't need to separately install the `os`, `json`, or `time` modules as they come pre-installed with Python3.
+
+Next, clone this repository:
+
+```bash
+git clone <repo-url>
+```
+
+Rename the `dotenv_template` file to `.env`:
+
+```bash
+mv dotenv_template .env
+```
+
+Open the `.env` file with any text editor, and provide your Open AI key. It should look something like this:
+
+```bash
 OPENAI_KEY=your-key-goes-here
 ```
 
 Replace "your-key-goes-here" with your actual Open AI key.
 
-## How to run 
-
-Run the chatbot script with python3:
+Now you're ready to run the program! Just use the `python3` command followed by the script name:
 
 ```bash
 python3 chat.py
 ```
 
-That's it! The chatbot program should now be up and running.
+And that's it - the chatbot should now be up and running.
 
 ## Contribution
 
